@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-    files = parse_sessions(start_year=1991, end_year=2023, root_dir=os.path.join(PROJECT_ROOT, "data", "records", "data"))
+    files = parse_sessions(start_year=1990, end_year=2023, root_dir=os.path.join(PROJECT_ROOT, "data", "records", "data"))
     sessions =[]
 
     # make sure only xml-files are read
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     print(speeches_df.head())
     print(len(speeches_df))
 
-    filename = "speeches_1990_2022.parquet"
+    filename = "speeches_1990_2023.parquet"
 
     chunk_size = 10_000
 

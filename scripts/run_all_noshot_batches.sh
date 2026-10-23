@@ -5,7 +5,7 @@ ACTION="${1:-submit}" # submit, status, download, or merge
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd -- "$SCRIPT_DIR/../.." && pwd)"
-INPUT_PATH="${INPUT_PATH:-$PROJECT_ROOT/data/speeches_1990_2022.parquet}"
+INPUT_PATH="${INPUT_PATH:-$PROJECT_ROOT/data/speeches_1991_2023.parquet}"
 OUTPUT_DIR="${OUTPUT_DIR:-$PROJECT_ROOT/outputs/noshot_4omini_batches}"
 START="${START:-0}"
 STOP="${STOP:-427014}"
